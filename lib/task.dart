@@ -1,0 +1,15 @@
+class Task {
+  int? id;
+  String title;
+  String? description;
+
+  Task({this.id, required this.title, this.description});
+
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'title': title,
+      'description': description,
+    };
+  }
+}
